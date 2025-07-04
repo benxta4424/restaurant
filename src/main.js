@@ -1,7 +1,7 @@
 import './style.css'
-import mainPage from './homePage';
-mainPage()
+import mainPage, { show } from './homePage';
 
-if (module.hot) {
-  module.hot.accept();
-}
+
+// home button
+mainPage()
+document.getElementById("homePage").addEventListener("click", show)
