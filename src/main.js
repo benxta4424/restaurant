@@ -1,9 +1,6 @@
-console.log("Server working on the weekend as usual!")
-console.log("yeaa thats hotttnoshot")
-
-
-
-console.log("get")
+import './style.css'
+import mainPage from './homePage';
+mainPage()
 
 if (module.hot) {
   module.hot.accept();
