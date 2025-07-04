@@ -2,7 +2,6 @@ import restaurantPicture from './restaurantPicture.jpg'
 
 export function mainPage() {
     const getParent = document.getElementById("content")
-    getParent.className = "hide"
     getParent.innerHTML = ""
 
     // adding the picture
@@ -28,6 +27,8 @@ export function mainPage() {
     fewWords.innerText = "At Dracula's Kitchen, we honor Romania's culinary legacy with every dish we craft. Our logo, inspired by timeless Romanian motifs, reflects the heart behind our cooking—where age-old recipes meet heartfelt dedication. ‘Tradition Served with Passion’ isn’t just our motto; it’s the essence of your dining experience."
     fewWords.className = "fewWords"
     wordsContainer.appendChild(fewWords)
+
+    show()
 }
 
 export function show() {

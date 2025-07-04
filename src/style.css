@@ -56,6 +56,9 @@ button:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+#content:empty {
+  display: none;
+}
 
 @media (min-width: 900px) {
   #content {
@@ -86,7 +89,7 @@ button:hover {
 
 .title {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primary-color);
   margin-bottom: 20px;
   line-height: 1.2;
@@ -103,4 +106,55 @@ button:hover {
   background: linear-gradient(90deg, var(--primary-color), transparent);
   margin: 25px 0;
   border: none;
+}
+
+
+/* about page */
+
+
+.children {
+  margin-bottom: 40px;
+  background: #f9f7f6;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.children:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.aboutTitle {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6b2e0c; /* Dark reddish brown */
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.finalMotto {
+  display: block;
+  font-size: 0.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 60px;
+  color: #a4370a;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  user-select: none;
+  margin-top: auto;
+  text-shadow: 0 0 8px #ffb347, 0 0 16px #ffb347, 0 0 24px #ffb347;
+}
+.finalMotto:hover {
+  scale: 2.5;
+  transform: rotate(360deg);
+  transition-duration: 2s;
 }
