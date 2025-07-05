@@ -158,3 +158,16 @@ button:hover {
   transform: rotate(360deg);
   transition-duration: 2s;
 }
+
+
+/* menu */
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+}
+.firstMenu {
+  height: 700px;
+}
+.secondMenu {
+  height: 700px;
+}
